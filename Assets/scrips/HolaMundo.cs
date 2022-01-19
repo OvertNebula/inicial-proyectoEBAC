@@ -19,7 +19,31 @@ public class HolaMundo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        x = x + 1;
-        Debug.Log(x);
+        //x = x + 1;
+        //Debug.Log(x);
+
+        Debug.Log("hola desde Update");
     }
+    private void FixedUpdate()
+    {
+        Debug.LogWarning("hola desde FixedUpdat cada 50 frames");
+    }
+    private void LateUpdate()
+    {
+        Debug.Log("hola desde late Update");
+    }
+    private void OnEnable()
+    {
+        Debug.LogWarning("el bojeto ha sido habilitado");
+    }
+    private void OnDisable()
+    {
+        Debug.LogWarning("el objeto ha sido inabilitado");
+    }
+
 }
+
+
+
+  
+

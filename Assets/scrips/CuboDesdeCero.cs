@@ -47,8 +47,8 @@ public class CuboDesdeCero : MonoBehaviour
         objToSpawn.AddComponent<BoxCollider>();
         var boxCollider = objToSpawn.GetComponent<BoxCollider>();
         boxCollider.center = new Vector3(0.5f, 0.5f, 0.5f);
-        var meshRendererMaterial = objToSpawn.GetComponent<MeshFilter>();
-        GetComponent<MeshRenderer>(); //meshRendererMaterial.color = Color.white; // no se que le pasa a esta parte del script
+        var meshRendererMaterial = objToSpawn.GetComponent<MeshRenderer>().material.color = Color.white;
+        //meshRendererMaterial.color = Color.white; // error en la primera palabra de "color"
         objToSpawn.transform.position = Vector3.one;
        
 

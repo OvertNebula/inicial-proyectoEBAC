@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: 9eaefa5c1534d1c43b12413e7dad0a6d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - objectToActibableYDesactibable: {fileID: 897228091938930188, guid: c141f0d57d3b9a54fabdab26f261a81e, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

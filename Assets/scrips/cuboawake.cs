@@ -2,10 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CuboDesdeCero : MonoBehaviour
+public class cuboawake : MonoBehaviour
 {
-
-    GameObject objToSpawn;
+    GameObject objToCubo;
     Vector3[] vertices =
     {
         new Vector3 (0, 0, 0), //vertice0
@@ -36,32 +35,30 @@ public class CuboDesdeCero : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        objToSpawn = new GameObject("Nuestro primer cubo");
-        objToSpawn.AddComponent<MeshFilter>();
-        var meshFilter = objToSpawn.GetComponent<MeshFilter>().mesh;
-        meshFilter.Clear();
-        meshFilter.vertices = vertices;
-        meshFilter.triangles = triangulos;
-        meshFilter.Optimize();
-        meshFilter.RecalculateNormals();
-        objToSpawn.AddComponent<BoxCollider>();
-        var boxCollider = objToSpawn.GetComponent<BoxCollider>();
-        boxCollider.center = new Vector3(0.5f, 0.5f, 0.5f);
-        objToSpawn.AddComponent<MeshRenderer>();
-        var meshRenderedMaterial = objToSpawn.GetComponent<MeshRenderer>().material;
-        meshRenderedMaterial.color = Color.white;
-        objToSpawn.transform.position = Vector3.one;
-                                    
-
-
         
-       
-
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+    private void Awake()
+    {
+        objToCubo = new GameObject("Nuestro primer cubo");
+        objToCubo.AddComponent<MeshFilter>();
+        var meshFilter = objToCubo.GetComponent<MeshFilter>().mesh;
+        meshFilter.Clear();
+        meshFilter.vertices = vertices;
+        meshFilter.triangles = triangulos;
+        meshFilter.Optimize();
+        meshFilter.RecalculateNormals();
+        objToCubo.AddComponent<BoxCollider>();
+        var boxCollider = objToCubo.GetComponent<BoxCollider>();
+        boxCollider.center = new Vector3(-6.69f, 0.17f, -1.24f);
+        objToCubo.AddComponent<MeshRenderer>();
+        var meshRenderedMaterial = objToCubo.GetComponent<MeshRenderer>().material;
+        meshRenderedMaterial.color = Color.black;
+        objToCubo.transform.position = Vector3.one;
     }
 }

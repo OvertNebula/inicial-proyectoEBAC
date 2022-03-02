@@ -5,6 +5,9 @@ using UnityEngine;
 public class cuboawake : MonoBehaviour
 {
     public GameObject ObjectTOAWAKE;
+    public Rigidbody cuboColores;
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,9 +21,12 @@ public class cuboawake : MonoBehaviour
     }
     private void Awake()
     {
+        cuboColores = GetComponent<Rigidbody>();
+        Color c= new Color(Random.value, Random.value, Random.value);
+
         Debug.Log("esta apagado");
         GameObject TempGameObject = Instantiate<GameObject>(ObjectTOAWAKE);
-        Color c = new Color(Random.value, Random.value, Random.value);
+        //Color c = new Color(Random.value, Random.value, Random.value);
         TempGameObject.transform.position = Random.insideUnitSphere;
     }
 }

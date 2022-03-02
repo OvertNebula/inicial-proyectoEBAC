@@ -18,7 +18,9 @@ public class cuboawake : MonoBehaviour
     }
     private void Awake()
     {
+        Debug.Log("esta apagado");
         GameObject TempGameObject = Instantiate<GameObject>(ObjectTOAWAKE);
         Color c = new Color(Random.value, Random.value, Random.value);
+        TempGameObject.transform.position = Random.insideUnitSphere;
     }
 }

@@ -5,12 +5,14 @@ using UnityEngine;
 public class cuboawake : MonoBehaviour
 {
     public GameObject ObjectTOAWAKE;
-    public Rigidbody cuboColores;
+    //public Rigidbody cuboColores;
     
 
     // Start is called before the first frame update
     void Start()
     {
+        //gameObject.GetComponent<MeshRenderer>().material.color = new Color(Random.value, Random.value, Random.value);
+
         Debug.Log("esta prendido");
     }
 
@@ -21,12 +23,15 @@ public class cuboawake : MonoBehaviour
     }
     private void Awake()
     {
-        cuboColores = GetComponent<Rigidbody>();
-        Color c= new Color(Random.value, Random.value, Random.value);
+        GameObject TempGameObject = Instantiate<GameObject>(ObjectTOAWAKE);
+        Color c = new Color(Random.value, Random.value, Random.value);
+        gameObject.GetComponent<MeshRenderer>().material.color = c;
 
         Debug.Log("esta apagado");
-        GameObject TempGameObject = Instantiate<GameObject>(ObjectTOAWAKE);
-        //Color c = new Color(Random.value, Random.value, Random.value);
-        TempGameObject.transform.position = Random.insideUnitSphere;
+        
+    }
+    private void FixedUpdate()
+    {
+        
     }
 }

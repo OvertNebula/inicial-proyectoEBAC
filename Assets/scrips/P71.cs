@@ -7,6 +7,7 @@ public class P71 : MonoBehaviour
 {
     public GameObject objeToP71;
 
+    bool tuVariableBool;
     //bool variable1;
     //bool variable2;
     //int verdadero = 1;
@@ -15,22 +16,32 @@ public class P71 : MonoBehaviour
     {
         
     }
-    // Start is called before the first frame update
-    public GameObject toggler;
+    //Start is called before the first frame update
+    //public GameObject toggler;
     void Start()
     {
-        print (toggler.GetComponent<Toggle>().isOn);
+        tuVariableBool = !tuVariableBool;
+        //print (toggler.GetComponent<Toggle>().isOn);
         var meshRenderedMaterial = objeToP71.GetComponent<MeshRenderer>().material;
         //variable1 = true;
         //variable2 = false;
         //Random.Range(variable1, variable2);
         //Random.Range(verdadero, falso);
-        if (toggler)
+        if (tuVariableBool)
+        {
+            tuVariableBool = false;
+        }
+        else
+        {
+            tuVariableBool = true;
+
+        }
+        if (tuVariableBool)
         {
             meshRenderedMaterial.color = Color.white;
             Debug.Log("P71 verdadero");
         }
-        else if (false)
+        else
         {
             meshRenderedMaterial.color = Color.black;
             Debug.Log("P71 falso");
@@ -42,8 +53,8 @@ public class P71 : MonoBehaviour
     {
         
     }
-    public void userToggle(bool tog)
-    {
-        print(tog);   
-    }
+    //public void userToggle(bool tog)
+    //{
+    //    print(tog);   
+    //}
 }

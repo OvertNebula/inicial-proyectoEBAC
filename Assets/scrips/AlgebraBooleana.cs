@@ -40,6 +40,10 @@ public class AlgebraBooleana : MonoBehaviour
         //variable1 = true;
         //variable2 = false;
         //variable3 = false;
+        //if (variable1 == true)
+        //{
+        //
+        //}
         //if ((variable1 || variable2) && variable3)
         //{
         //    Debug.Log("la operacion 1 es verdadera");

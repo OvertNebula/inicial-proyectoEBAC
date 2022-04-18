@@ -6,22 +6,18 @@ public class P72 : MonoBehaviour
 {
     public GameObject objeToP72;
 
-    bool variable1;
+    public bool tuVariableBool72;
     // Start is called before the first frame update
-    void Start()
+    void Update()
     {
-        variable1 = true;
+        objeToP72 = this.gameObject;
+
+        tuVariableBool72 = true;
         var meshRenderedMaterial = objeToP72.GetComponent<MeshRenderer>().material;
-        if (variable1)
+        if (tuVariableBool72)
         {
             meshRenderedMaterial.color = Color.white;
             Debug.Log("P72 verdadero");
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

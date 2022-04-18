@@ -7,7 +7,7 @@ public class P71 : MonoBehaviour
 {
     public GameObject objeToP71;
 
-    bool tuVariableBool;
+    public bool tuVariableBool71 = false;
     //bool variable1;
     //bool variable2;
     //int verdadero = 1;
@@ -18,41 +18,53 @@ public class P71 : MonoBehaviour
     }
     //Start is called before the first frame update
     //public GameObject toggler;
-    void Start()
+    void Update()
     {
-        tuVariableBool = !tuVariableBool;
+        objeToP71 = this.gameObject;
+        tuVariableBool71 = !tuVariableBool71;
+        //freim0 tuVarible71 = false
+        //freim1 false = !true =>tue
+        //freim2 true =!true => false
+
         //print (toggler.GetComponent<Toggle>().isOn);
+
         var meshRenderedMaterial = objeToP71.GetComponent<MeshRenderer>().material;
+
         //variable1 = true;
         //variable2 = false;
         //Random.Range(variable1, variable2);
         //Random.Range(verdadero, falso);
-        if (tuVariableBool)
-        {
-            tuVariableBool = false;
-        }
-        else
-        {
-            tuVariableBool = true;
 
-        }
-        if (tuVariableBool)
+
+        //if (tuVariableBool)
+        //{
+        //    tuVariableBool = false;
+        //}
+        //else
+        //{
+        //    tuVariableBool = true;
+        //
+        //}
+
+        if (tuVariableBool71)
         {
+            tuVariableBool71 = false;
             meshRenderedMaterial.color = Color.white;
             Debug.Log("P71 verdadero");
         }
         else
         {
+            tuVariableBool71 = false;
             meshRenderedMaterial.color = Color.black;
             Debug.Log("P71 falso");
         }
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    //void Update()
+    //{
+    //    
+    //}
     //public void userToggle(bool tog)
     //{
     //    print(tog);   

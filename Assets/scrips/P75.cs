@@ -2,29 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class P74 : MonoBehaviour
+public class P75 : MonoBehaviour
 {
+    public GameObject objeToP75;
+    public GameObject objeToP73;
     public GameObject objeToP74;
-    public GameObject objeToP71;
 
-    public bool tuVariableBool74;
+    public bool tuVariableBol75;
 
     // Update is called once per frame
     void Update()
     {
-        objeToP74 = this.gameObject;
+        objeToP75 = this.gameObject;
 
-        var meshRenderedMaterial = objeToP74.GetComponent<MeshRenderer>().material;
+        var meshRenderedMaterial = objeToP75.GetComponent<MeshRenderer>().material;
 
-        if (objeToP71.GetComponent<P71>().tuVariableBool71 && objeToP74.GetComponent<P74>().tuVariableBool74)
+        if ((objeToP73.GetComponent<P73>().tuVariableBool73 || objeToP74.GetComponent<P74>().tuVariableBool74) && objeToP73.GetComponent<P73>().tuVariableBool73)
         {
-            tuVariableBool74 = false;
             meshRenderedMaterial.color = Color.white;
             Debug.Log("su coneccion es verdadera");
         }
-        else if (objeToP74)
+        else
         {
-            tuVariableBool74 = true;
             meshRenderedMaterial.color = Color.black;
             Debug.Log("su coneccion es falsa");
         }

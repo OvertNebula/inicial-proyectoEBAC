@@ -21,7 +21,8 @@ public class P71 : MonoBehaviour
     void Update()
     {
         objeToP71 = this.gameObject;
-        tuVariableBool71 = !tuVariableBool71;
+
+        //maNGItuVariableBool71 = !tuVariableBool71;
         //freim0 tuVarible71 = false
         //freim1 false = !true =>tue
         //freim2 true =!true => false
@@ -48,7 +49,7 @@ public class P71 : MonoBehaviour
 
         if (tuVariableBool71)
         {
-            tuVariableBool71 = false;
+            tuVariableBool71 = true;
             meshRenderedMaterial.color = Color.white;
             Debug.Log("P71 verdadero");
         }

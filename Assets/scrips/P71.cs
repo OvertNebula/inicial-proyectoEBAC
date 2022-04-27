@@ -49,13 +49,11 @@ public class P71 : MonoBehaviour
 
         if (tuVariableBool71)
         {
-            tuVariableBool71 = true;
             meshRenderedMaterial.color = Color.white;
             Debug.Log("P71 verdadero");
         }
         else
         {
-            tuVariableBool71 = false;
             meshRenderedMaterial.color = Color.black;
             Debug.Log("P71 falso");
         }

@@ -13,11 +13,13 @@ public class P72 : MonoBehaviour
         var meshRenderedMaterial = objeToP72.GetComponent<MeshRenderer>().material;
         if (tuVariableBool72)
         {
+            tuVariableBool72 = true;
             meshRenderedMaterial.color = Color.white;
             Debug.Log("P72 verdadero");
         }
         else
         {
+            tuVariableBool72 = false;
             meshRenderedMaterial.color = Color.black;
             Debug.Log("P7 falso");
         }

@@ -20,7 +20,7 @@ public class VarNumericasYCaracter : MonoBehaviour
         var meshRendered = varbleEntera.GetComponent<MeshRenderer>().material;
 
         p8unit = (uint)p8int;
-        Debug.Log("casteo implisito:" + p8unit);
+        Debug.Log("casteo explisito:" + p8unit);
 
         int a, b;
         a = 1;
@@ -29,14 +29,16 @@ public class VarNumericasYCaracter : MonoBehaviour
         if (ElCubo %2 == 0)
         {
             meshRendered.color = Color.black;
-            Debug.Log("el cubo" + ElCubo + "es par");
+            Debug.Log("el cubo" + ElCubo + " es par");
         }
         else
         {
             meshRendered.color = Color.white;
-            Debug.Log("el cubo" + ElCubo + "es non");
+            Debug.Log("el cubo" + ElCubo + " es non");
         }
+
         
+
 
     }
 

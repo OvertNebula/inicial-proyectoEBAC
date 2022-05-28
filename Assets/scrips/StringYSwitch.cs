@@ -6,6 +6,9 @@ public class StringYSwitch : MonoBehaviour
 {
     public GameObject CuboColor;
 
+    float flotante = 555.0493F;
+    string s1;
+
     int valor = 0;
     int bajo = 0;
     int alto = 3;
@@ -23,7 +26,7 @@ public class StringYSwitch : MonoBehaviour
         var meshRendered = CuboColor.GetComponent<MeshRenderer>().material;
 
         valor = Random.Range(bajo, alto);
-        Debug.Log("el color del cubo es" + valor);
+        Debug.Log("el numero de color en el cubo es" + valor);
         switch (valor)
         {
             case (int)colordelcubo.blanco:
@@ -41,7 +44,10 @@ public class StringYSwitch : MonoBehaviour
 
                
         }
-        string flotantes = valor.ToString();
+        s1 = flotante.ToString("100000000002");
+        Debug.Log("s1 es" + s1);
+
+        //flotante = s1.ToString();
 
     }
 
@@ -53,7 +59,7 @@ public class StringYSwitch : MonoBehaviour
         char letra3;
         char letra4;
         char letra5;
-        string MiNombre = "Steven Samano González";
+        string MiNombre = "Steven Samano González ";
         letra1 = MiNombre[3];
         Debug.Log(letra1);
         letra2 = MiNombre[20];
@@ -64,11 +70,14 @@ public class StringYSwitch : MonoBehaviour
         Debug.Log(letra4);
         letra5 = MiNombre[12];
         Debug.Log(letra5);
-        string separacion1 = MiNombre.Substring(0,5);
+        string separacion1 = MiNombre.Substring(0,6);
+        //string[] corte1 = MiNombre.Split('6');
         Debug.Log(separacion1);
-        string separacion2 = MiNombre.Substring(7,12);
+        string separacion2 = MiNombre.Substring(7,6);
+        //string[] corte2 = MiNombre.Split('13');
         Debug.Log(separacion2);
-        string separacion3 = MiNombre.Substring(14,21);
+        string separacion3 = MiNombre.Substring(14,8);
+        //string[] corte3 = MiNombre.Split('22');
         Debug.Log(separacion3);
 
 

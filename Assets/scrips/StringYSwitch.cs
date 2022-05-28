@@ -6,7 +6,7 @@ public class StringYSwitch : MonoBehaviour
 {
     public GameObject CuboColor;
 
-    float flotante = 5.0493F;
+    float flotante = 555.0493F;
     string s1;
 
     int valor = 0;
@@ -44,7 +44,7 @@ public class StringYSwitch : MonoBehaviour
 
                
         }
-        s1 = flotante.ToString("1,2");
+        s1 = flotante.ToString("100000000002");
         Debug.Log("s1 es" + s1);
 
         //flotante = s1.ToString();
@@ -71,12 +71,12 @@ public class StringYSwitch : MonoBehaviour
         letra5 = MiNombre[12];
         Debug.Log(letra5);
         string separacion1 = MiNombre.Substring(0,6);
-        string[] corte1 = MiNombre.Split('6');
+        //string[] corte1 = MiNombre.Split('6');
         Debug.Log(separacion1);
-        string separacion2 = MiNombre.Substring(7,12);
+        string separacion2 = MiNombre.Substring(7,6);
         //string[] corte2 = MiNombre.Split('13');
         Debug.Log(separacion2);
-        string separacion3 = MiNombre.Substring(14,21);
+        string separacion3 = MiNombre.Substring(14,8);
         //string[] corte3 = MiNombre.Split('22');
         Debug.Log(separacion3);
 

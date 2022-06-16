@@ -44,10 +44,10 @@ public class StringYSwitch : MonoBehaviour
 
                
         }
-        s1 = flotante.ToString("100000000002");
+        s1 = flotante.ToString("n4");
         Debug.Log("s1 es" + s1);
 
-        //flotante = s1.ToString();
+        //flotante = s1.ToString("n4");
 
     }
 

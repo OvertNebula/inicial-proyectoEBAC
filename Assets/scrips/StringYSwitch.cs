@@ -6,8 +6,10 @@ public class StringYSwitch : MonoBehaviour
 {
     public GameObject CuboColor;
 
-    float flotante = 555.0493F;
+    float flotante1 = 555.0493F;
     string s1;
+    float flotante2 = 9.0342F;
+    string s2;
 
     int valor = 0;
     int bajo = 0;
@@ -44,8 +46,11 @@ public class StringYSwitch : MonoBehaviour
 
                
         }
-        s1 = flotante.ToString("n4");
+        s1 = flotante1.ToString("n4");
         Debug.Log("s1 es" + s1);
+
+        s2 = flotante2.ToString("n4");
+        Debug.Log("s2 es" + s2);
 
         //flotante = s1.ToString("n4");
 

@@ -9,11 +9,11 @@ C:\Program Files\Unity\Hub\Editor\2020.3.24f1\Editor\Unity.exe
 -batchMode
 -noUpm
 -name
-AssetImportWorker0
+AssetImportWorker30
 -projectPath
 C:/Users/steli/Documents/unity/inicial-proyectoEBAC
 -logFile
-Logs/AssetImportWorker0.log
+Logs/AssetImportWorker30.log
 -srvPort
 65094
 Successfully changed project path to: C:/Users/steli/Documents/unity/inicial-proyectoEBAC

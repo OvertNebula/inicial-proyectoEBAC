@@ -4,16 +4,17 @@ using UnityEngine;
 
 public class P91 : MonoBehaviour
 {
-    int[] Arre1 = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+    int[] Arre11 = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+    int[] Arre12 = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
     // Start is called before the first frame update
     void Start()    
     {
-        for (int i = 0, j = 0; i < j ; i++, j = i+1) 
+        for (int i = 0, j = 0, x; i < 0; i++) //j++) 
         {
-            int x;
-            Random.Range(i, j);
+            Random.Range (i,j);
+            j = 2;
             x = i + j;
-            Debug.Log(Arre1[x]);
+            Debug.Log(x);
 
         }
 

@@ -36,7 +36,7 @@ public class Ciclos : MonoBehaviour
         int[,] miMatriz = new int[3, 3] { {1,2,3 },{4,5,6 },{7,8,9 } };
         for (int j = 0; j < miMatriz.GetLength(0); j++)
         {
-            for (int k = 0; k <= miMatriz.GetLength(1); k++)
+            for (int k = 0; k < miMatriz.GetLength(1); k++)
             {
                 miMatriz[j, k] += 1;
                 Debug.Log(miMatriz[j,k]);

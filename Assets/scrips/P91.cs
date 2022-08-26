@@ -9,10 +9,10 @@ public class P91 : MonoBehaviour
     // Start is called before the first frame update
     void Start()    
     {
-        for (int i = 0, j = 0, x; i < 0; i++) //j++) 
+        for (int i = 0, j = 0, x; i < Arre11.Length ; i++) //j++) 
         {
-            Random.Range (i,j);
-            j = 2;
+            Random.Range (i,(Arre11.Length));
+            j = Random.Range(0,9);
             x = i + j;
             Debug.Log(x);
 
@@ -44,7 +44,7 @@ public class P91 : MonoBehaviour
         }
 
         int Arre3;
-        int[] Arre31 = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+        int[] Arre31 = { 1, 2, 3 };
         int[][] Arre32 = new int[][]
         {
             new int []{1,2,3},
@@ -58,14 +58,36 @@ public class P91 : MonoBehaviour
 
                 for (int y = 0; y < Arre32[x].Length; y++)
                 {
-                    Arre3 = (i + x)*(i + y);
-
+                    Arre3 = (i * x)+(i * y);
+                    //Arre3 = i * (y + x);
                     Debug.Log(Arre3);
                 }
             }
         }
-        
 
+        //extra - ejecicio Lalo tiene 5 discos 'd' y tras revisarlos los mete al cajón x, pero cada que mete un disco da un mensaje de 'Hola' más el numero de veces que lo haya hecho y después apunta cuantos discos metió en el cajón x.
+        //d = discos
+        //x = discos en el cajon
+        int[] disco = { 0, 1, 2, 3, 4, 5,};
+        int d = 5;
+        //int X = 0;
+        int X = d;
+        for (int I = 0; I < d; I++)
+        {
+            //Debug.Log("Hola" + I + 1);
+            //X++;
+            //Debug.Log("Discos metidos: " + X);
+            for (int j = 0; j <= X; j++) 
+            {
+                Debug.Log("Hola" + I + 1);
+                Debug.Log("Discos metidos: " + X);
+            }
+        }
+        for (int D = 0; D < disco.Length; D++)
+        {
+            Debug.Log("Hola 2" + D + 1);
+            Debug.Log("Discos metidos 2: " + X);
+        }
     }
 
 

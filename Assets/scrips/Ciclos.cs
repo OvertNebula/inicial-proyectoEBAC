@@ -27,10 +27,20 @@ public class Ciclos : MonoBehaviour
         string[] diasSemana = new string[7] { " lunes", " martes", " miercoles", " jueves", " viernes", " sabado", " domingo" };
         diasSemana = new string[] { " jueves", " viernes", " sabado", " domingo", " lunes", " martes", " miercoles" };
 
-        for (int i = 0; i < diasSemana.Length; i++)
+        //for (int i = 0; i < diasSemana.Length; i++)
+        //{
+        //    miArreglo[i] = i + 1;
+        //    Debug.Log(diasSemana[i]);
+        //}
+
+        //alternatiba, solo para leer los dartos
+        foreach (int i in miArreglo)
         {
-            miArreglo[i] = i + 1;
-            Debug.Log(diasSemana[i]);
+            Debug.Log(i);
+        }
+        foreach(string dia in diasSemana)
+        {
+            Debug.Log(dia);
         }
         //multidimencional
         int[,] miMatriz = new int[3, 3] { {1,2,3 },{4,5,6 },{7,8,9 } };

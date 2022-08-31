@@ -4,18 +4,17 @@ using UnityEngine;
 
 public class P91 : MonoBehaviour
 {
-    int[] Arre11 = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+    int[] Arre11 = new int[10];
     int[] Arre12 = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
     // Start is called before the first frame update
     void Start()    
     {
-        for (int i = 0, j = 0, x; i < Arre11.Length ; i++) //j++) 
+        for (int i = 0; i < Arre11.Length ; i++) //j++) 
         {
-            Random.Range (i,(Arre11.Length));
-            j = Random.Range(0,9);
-            x = i + j;
-            Debug.Log(x);
-
+            int[] Arre13 = new int[Arre11.Length];
+            Arre11[i] = Random.Range(0, Arre11.Length);
+            Arre12[i] = Random.Range(0, Arre12.Length);
+            Arre13[i] = Arre11[i] + Arre12[i];
         }
 
         //for (int i = 0; i < Arre1.Length; i++)
@@ -45,20 +44,19 @@ public class P91 : MonoBehaviour
 
         int Arre3;
         int[] Arre31 = { 1, 2, 3 };
-        int[][] Arre32 = new int[][]
+        int[,] Arre32 = new int[2, 3] { { 1, 2, 3 }, { 4, 5, 6 } };
         {
-            new int []{1,2,3},
-            new int []{4,5,6}
+
         };
         for (int i = 0; i < Arre31.Length; i++)
         {
-            for (int x = 0; x < Arre32.Length; x++)
+            for (int x = 0; x < Arre32.GetLength(0); x++)
             {
-                Arre3 = i + x;
 
-                for (int y = 0; y < Arre32[x].Length; y++)
+                for (int y = 0; y < Arre32.GetLength(1); y++)
                 {
-                    Arre3 = (i * x)+(i * y);
+                    
+                    Arre3 = (Arre31[i] * Arre32[x,y])+(Arre31[i] * Arre32[x,y]);
                     //Arre3 = i * (y + x);
                     Debug.Log(Arre3);
                 }
@@ -68,24 +66,19 @@ public class P91 : MonoBehaviour
         //extra - ejecicio Lalo tiene 5 discos 'd' y tras revisarlos los mete al cajón x, pero cada que mete un disco da un mensaje de 'Hola' más el numero de veces que lo haya hecho y después apunta cuantos discos metió en el cajón x.
         //d = discos
         //x = discos en el cajon
-        int[] disco = { 0, 1, 2, 3, 4, 5,};
+        int[] disco = { 1, 2, 3, 4, 5,};
         int d = 5;
-        //int X = 0;
-        int X = d;
+        int X = 0;
         for (int I = 0; I < d; I++)
         {
-            //Debug.Log("Hola" + I + 1);
-            //X++;
-            //Debug.Log("Discos metidos: " + X);
-            for (int j = 0; j <= X; j++) 
-            {
-                Debug.Log("Hola" + I + 1);
-                Debug.Log("Discos metidos: " + X);
-            }
+            Debug.Log("Hola" + (I + 1));
+            X++;
+            Debug.Log("Discos metidos: " + X);
         }
         for (int D = 0; D < disco.Length; D++)
         {
-            Debug.Log("Hola 2" + D + 1);
+            Debug.Log("Hola 2" + disco[D]);
+            X++;
             Debug.Log("Discos metidos 2: " + X);
         }
     }

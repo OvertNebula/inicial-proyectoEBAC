@@ -6,17 +6,18 @@ public class P91 : MonoBehaviour
 {
     int[] Arre11 = new int[10];
     int[] Arre12 = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+    int[] Arre13 = new int[10];
     // Start is called before the first frame update
     void Start()    
     {
         for (int i = 0; i < Arre11.Length ; i++) //j++) 
         {
-            int[] Arre13 = new int[Arre11.Length];
+            //int[] Arre13 = new int[Arre11.Length];
             Arre11[i] = Random.Range(0, Arre11.Length);
             Arre12[i] = Random.Range(0, Arre12.Length);
             Arre13[i] = Arre11[i] + Arre12[i];
         }
-
+        
         //for (int i = 0; i < Arre1.Length; i++)
         //{
         //    foreach (int valor1 in Arre1)
@@ -42,7 +43,7 @@ public class P91 : MonoBehaviour
             Debug.Log(Arre2[Mes]);
         }
 
-        int Arre3;
+        int[] Arre3 = new int[2];
         int[] Arre31 = { 1, 2, 3 };
         int[,] Arre32 = new int[2, 3] { { 1, 2, 3 }, { 4, 5, 6 } };
         {
@@ -52,14 +53,13 @@ public class P91 : MonoBehaviour
         {
             for (int x = 0; x < Arre32.GetLength(0); x++)
             {
-
                 for (int y = 0; y < Arre32.GetLength(1); y++)
                 {
+
+                    Arre3[x] += Arre32[x,y] * Arre31[y];
                     
-                    Arre3 = (Arre31[i] * Arre32[x,y])+(Arre31[i] * Arre32[x,y]);
-                    //Arre3 = i * (y + x);
-                    Debug.Log(Arre3);
                 }
+                Debug.Log("resultado" + Arre3[x]);
             }
         }
 

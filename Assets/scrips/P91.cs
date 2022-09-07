@@ -49,9 +49,21 @@ public class P91 : MonoBehaviour
         {
 
         };
-        for (int i = 0; i < Arre31.Length; i++)
-        {
-            for (int x = 0; x < Arre32.GetLength(0); x++)
+        //sin uso del primer "for"
+        //for (int i = 0; i < Arre31.Length; i++)
+        //{
+        //    for (int x = 0; x < Arre32.GetLength(0); x++)
+        //    {
+        //        for (int y = 0; y < Arre32.GetLength(1); y++)
+        //        {
+        //
+        //            Arre3[x] += Arre32[x,y] * Arre31[y];
+        //            
+        //        }
+        //        Debug.Log("resultado" + Arre3[x]);
+        //    }
+        //}
+        for (int x = 0; x < Arre32.GetLength(0); x++)
             {
                 for (int y = 0; y < Arre32.GetLength(1); y++)
                 {
@@ -61,7 +73,6 @@ public class P91 : MonoBehaviour
                 }
                 Debug.Log("resultado" + Arre3[x]);
             }
-        }
 
         //extra - ejecicio Lalo tiene 5 discos 'd' y tras revisarlos los mete al cajón x, pero cada que mete un disco da un mensaje de 'Hola' más el numero de veces que lo haya hecho y después apunta cuantos discos metió en el cajón x.
         //d = discos

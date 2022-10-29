@@ -6,7 +6,7 @@ public class EjerciciosEstructuras : MonoBehaviour
 {
     public List<int> p12MiFuncion3 = new List<int>();
     public List<int> p12MiFuncion2 = new List<int>();
-    //public List<int> p12MiFuncion(int tamaño, int rangoInferior, int rangoSuperior);
+    //public List<int> p12MiFuncion(int tamaï¿½o, int rangoInferior, int rangoSuperior);
     // Start is called before the first frame update
     public void Start()
     {
@@ -37,12 +37,12 @@ public class EjerciciosEstructuras : MonoBehaviour
         p12MiFuncion3.Add(4);
         
     }
-
+//Prueba
     // Update is called once per frame
-    //public List<int> p12MiFuncion1 (int tamaño, int rangoInferior, int rangoSuperior)
+    //public List<int> p12MiFuncion1 (int tamaï¿½o, int rangoInferior, int rangoSuperior)
     //{
-    //    tamaño = (Random.Range(rangoInferior, rangoSuperior));
-    //    Debug.Log("MiFuncion1 " + tamaño);
+    //    tamaï¿½o = (Random.Range(rangoInferior, rangoSuperior));
+    //    Debug.Log("MiFuncion1 " + tamaï¿½o);
     //
     //    return p12MiFuncion1;
     //}

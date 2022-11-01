@@ -10,8 +10,9 @@ public class EjerciciosEstructuras : MonoBehaviour
     // Start is called before the first frame update
     public void Start()
     {
-        //p12MiFuncion1(10,0,20);
-        //ist<int> RegresoDep12MiFuncion1 = p12MiFuncion1;
+
+        //List<int> RegresoDep12MiFuncion1 = p12MiFuncion1;
+        //p12MiFuncion1(10, 0, 20);
         //Debug.Log("MiFuncion1 " + RegresoDep12MiFuncion1);
 
         p12MiFuncion2.Sort();
@@ -36,6 +37,8 @@ public class EjerciciosEstructuras : MonoBehaviour
         p12MiFuncion3.Add(4);
         p12MiFuncion3.Add(4);
         
+
+
     }
 
     // Update is called once per frame
@@ -59,7 +62,10 @@ public class EjerciciosEstructuras : MonoBehaviour
     {
         foreach (int Fun3 in p12MiFuncion3)
         {
+            if (p12MiFuncion3.Contains(Fun3))
+            {
 
+            }
         }
     }
 

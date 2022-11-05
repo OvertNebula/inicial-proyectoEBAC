@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class EjerciciosEstructuras : MonoBehaviour
 {
-    public List<int> p12MiFuncion3 = new List<int>();
+    public HashSet<int> p12MiFuncion3 = new HashSet<int>();
     public List<int> p12MiFuncion2 = new List<int>();
     //public List<int> p12MiFuncion(int tama�o, int rangoInferior, int rangoSuperior);
     // Start is called before the first frame update
     public void Start()
     {
-        //p12MiFuncion1(10,0,20);
-        //ist<int> RegresoDep12MiFuncion1 = p12MiFuncion1;
-        //Debug.Log("MiFuncion1 " + RegresoDep12MiFuncion1);
+
+        List<int> RegresoDep12MiFuncion1 = p12MiFuncion1(10, 0, 20);
+        //p12MiFuncion1(10, 0, 20);
+        Debug.Log("MiFuncion1 " + RegresoDep12MiFuncion1);
 
         p12MiFuncion2.Sort();
         p12MiFuncion2.Add(9);
@@ -36,16 +37,18 @@ public class EjerciciosEstructuras : MonoBehaviour
         p12MiFuncion3.Add(4);
         p12MiFuncion3.Add(4);
         
+
+
     }
-//Prueba
+    //Prueba
     // Update is called once per frame
-    //public List<int> p12MiFuncion1 (int tama�o, int rangoInferior, int rangoSuperior)
-    //{
-    //    tama�o = (Random.Range(rangoInferior, rangoSuperior));
-    //    Debug.Log("MiFuncion1 " + tama�o);
-    //
-    //    return p12MiFuncion1;
-    //}
+    public List<int> p12MiFuncion1 (int tamaño, int rangoInferior, int rangoSuperior)
+    {
+        tamaño = (Random.Range(rangoInferior, rangoSuperior));
+        Debug.Log("MiFuncion1 " + tamaño);
+    
+        return p12MiFuncion1(10, 0, 20);
+    }
     public void MiFuncion2()
     {
         foreach (int Fun2 in p12MiFuncion2)
@@ -59,8 +62,10 @@ public class EjerciciosEstructuras : MonoBehaviour
     {
         foreach (int Fun3 in p12MiFuncion3)
         {
-
+            Debug.Log("MiFuncion3 " + Fun3);
         }
+
+
     }
 
 

@@ -12,9 +12,9 @@ public class EjerciciosEstructuras : MonoBehaviour
     public void Start()
     {
 
-        List<int> RegresoDep12MiFuncion1 = p11MiFuncion1(10, 0, 20);
-        //p12MiFuncion1(10, 0, 20);
-        Debug.Log("MiFuncion1 " + RegresoDep12MiFuncion1);
+        //List<int> RegresoDep12MiFuncion1 = p11MiFuncion1(10, 0, 20);
+        ////p12MiFuncion1(10, 0, 20);
+        //Debug.Log("MiFuncion1 " + RegresoDep12MiFuncion1);
 
         p11MiFuncion2.Add(9);
         p11MiFuncion2.Add(0);
@@ -50,14 +50,16 @@ public class EjerciciosEstructuras : MonoBehaviour
         p11MiFuncion4.Push("G");
     }
     //Prueba
+
     // Update is called once per frame
-    public List<int> p11MiFuncion1 (int tamaño, int rangoInferior, int rangoSuperior)
-    {
-        tamaño = (Random.Range(rangoInferior, rangoSuperior));
-        Debug.Log("MiFuncion1 " + tamaño);
-    
-        return p11MiFuncion1(10, 0, 20);
-    }
+    //public List<int> p11MiFuncion1 (int tamaño, int rangoInferior, int rangoSuperior)
+    //{
+    //    tamaño = (Random.Range(rangoInferior, rangoSuperior));
+    //    List<int> tamañoDebuelto = p11MiFuncion1;
+    //    Debug.Log("MiFuncion1 " + tamaño);
+    //
+    //    return tamañoDebuelto;
+    //}
     public void MiFuncion2()
     {
         foreach (int Fun2 in p11MiFuncion2)
@@ -67,9 +69,10 @@ public class EjerciciosEstructuras : MonoBehaviour
 
     }
 
-    //public HashSet<int> MiFuncion3(int p12MiFuncion3)
+    //public HashSet<int> MiFuncion3()
     //{
-    //    Debug.Log("MiFuncion3" + MiFuncion3);
+    //    HashSet<int>MiFuncion3retorno = p11MiFuncion3
+    //    return MiFuncion3retorno;
     //}
 
 

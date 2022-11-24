@@ -4,6 +4,15 @@ using UnityEngine;
 
 public class EjerciciosEstructuras : MonoBehaviour
 {
+    //practica
+    int[] PracArray = { 1, 2 };
+    public List<int> PracList = new List<int>();
+    public HashSet<int> PracHashSet = new HashSet<int>();
+    Stack<int> PracStack = new Stack<int>();
+
+
+
+
     public List<int> p11MiFuncion3 = new List<int>();
     public List<int> p11MiFuncion2 = new List<int>();
     Stack<string> p11MiFuncion4 = new Stack<string>();
@@ -42,7 +51,7 @@ public class EjerciciosEstructuras : MonoBehaviour
 
         foreach (int Fun3 in p11MiFuncion3)
         {
-            Debug.Log("MiFuncion3 " + Fun3);
+            Debug.Log("list-MiFuncion3 " + Fun3);
         }
 
 
@@ -53,6 +62,16 @@ public class EjerciciosEstructuras : MonoBehaviour
         p11MiFuncion4.Push("E");
         p11MiFuncion4.Push("F");
         p11MiFuncion4.Push("G");
+
+        //practicas
+        PracList.Add(3);
+        PracList.Add(4);
+
+        PracHashSet.Add(5);
+        PracHashSet.Add(6);
+
+        PracStack.Push(7);
+        PracStack.Push(8);
     }
     //Prueba
 
@@ -82,9 +101,11 @@ public class EjerciciosEstructuras : MonoBehaviour
         HashSet<int> NoRepetidos = new HashSet<int>();
         foreach (string elementos in Repetidos)
         {
-            NoRepetidos.Add(int.Parse(elementos));
+            NoRepetidos.Add(int32.Parse(elementos));
         }
+        Debug.Log("HashSet-MiFuncion3 " + NoRepetidos);
         return NoRepetidos;
+
     }
 
 
@@ -109,6 +130,10 @@ public class EjerciciosEstructuras : MonoBehaviour
         }
     }
 
+    public void MiFuncion5()
+    {
+
+    }
 
 
 }

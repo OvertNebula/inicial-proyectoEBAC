@@ -6,8 +6,8 @@ public class EjerciciosEstructuras : MonoBehaviour
 {
     //practica
     int[] PracArray = { 1, 2 };
-    public List<int> PracList = new List<int>();
-    public HashSet<int> PracHashSet = new HashSet<int>();
+    public List<int> PracList = new List<int>() { 33, 44 };
+    public HashSet<int> PracHashSet = new HashSet<int>() { 55, 66 };
     Stack<int> PracStack = new Stack<int>();
 
 
@@ -72,6 +72,35 @@ public class EjerciciosEstructuras : MonoBehaviour
 
         PracStack.Push(7);
         PracStack.Push(8);
+
+        Debug.Log(PracList[0]);
+        Debug.Log(PracList[1]);
+        Debug.Log(PracList[2]);
+        Debug.Log(PracList[3]);
+
+        Debug.Log(PracHashSet.Count);
+
+        Debug.Log(PracStack.Count);
+
+        foreach(int num in PracArray)
+        {
+
+        }
+
+        foreach (int num in PracList)
+        {
+
+        }
+
+        foreach (int num in PracHashSet)
+        {
+
+        }
+
+        foreach (int num in PracStack)
+        {
+
+        }
     }
     //Prueba
 
